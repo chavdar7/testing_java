@@ -39,12 +39,14 @@ public class Book extends Author{
 
 
     public Book(String name, Author author, double price){
+        super(author.getName(), author.getEmail(), author.getGender());
         setName(name);
         setAuthor(author);
         setPrice(price);
     }
 
     public Book(String name, Author author, double price, int qty){
+        super(author.getName(), author.getEmail(), author.getGender());
         setName(name);
         setAuthor(author);
         setPrice(price);
